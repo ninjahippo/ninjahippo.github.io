@@ -29,3 +29,8 @@ span.tagline {
     display:block;
     text-align:center;
 }
+
+::selection {
+    color: #400040;
+    background: rgb(140,0,140);
+}
