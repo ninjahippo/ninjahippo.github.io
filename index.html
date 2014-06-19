@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="styles/skeleton/base.css">
+        <link type="text/css" rel="stylesheet" href="styles/skeleton/skeleton.css">
+        <link type="text/css" rel="stylesheet" href="styles/skeleton/layout.css">
+        <link type="text/css" rel="stylesheet" href="styles/style.css">
         <title>ninjahippo</title>
     </head>
     <body>
-        <img src="ninjahippo.png" class="logo" />
-        <span class="tagline">the ultimate combination of robustness and versatility.</span>
+        <header>
+          <div class="container">
+            <div class="logo">
+              <a href="/dashboard">
+                ninjahippo. <span class="alpha">alpha</span>
+              </a>
+            </div>
+
+            <div class="meta">
+              <div class="options" ng-show="show_signin_signup">
+                <a href="http://cms.ninjahippo.io/signin">sign in</a>
+                <a href="http://cms.ninjahippo.io/signup">sign up</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div class="container">
+            <h2 class="center jumbo">the ultimate combination of robustness and versatility.</h2>
+            <div class="sixteen columns head">
+              <p class="center">
+                Ninjahippo is a CMS built <em>for</em> developers <em>by</em> developers. By combining the strengths of premier web technologies, a CMS may be created which is both fast, and convenient for use by developers.
+              </p>
+            </div>
+
+            <div class="row head">
+              <div class="one-third column">
+                <h2>why</h2>
+                <p>Ninjahippo makes it incredibly easy for a developer to hand the management of a simple content website over to their client by giving them full access to the content management side, while maintaining control of the infrastructure management, design, etc.. Because Ninjahippo is completely API based, it is versatile enough to be used on a multitude of web platforms, all determined by the developer's discretion.</p>
+              </div>
+              <div class="one-third column">
+                <h2>who</h2>
+                <p>Ninjahippo is built and maintained by <a href="https://github.com/JoahG">Joah Gerstenberg</a>, but is opensourced for the  contributions from the general public <a href="https://github.com/ninjahippo">on GitHub</a>.</p>
+              </div>
+              <div class="one-third column">
+                <h2>how</h2>
+                <p>The Ninjahippo CMS (<a href="http://cms.ninjahippo.io">cms.ninjahippo.io</a>, available also <a href="https://github.com/ninjahippo/cms">on GitHub</a>.) is built on Ruby on Rails, with Angular.JS serving up the frontend. The CMS is built as a graphical interface for the API (<a href="http://api.ninjahippo.io">api.ninjahippo.io</a>, available also <a href="https://github.com/ninjahippo/api">on GitHub</a>.), which is built on Node.JS and MongoDB, platforms known for their ability to serve blazing fast APIs.</p>
+              </div>
+            </div>
+
+            <div class="sixteen columns head">
+              <h2>get started</h2>
+              <p>You can get started now by checking out <a href="http://cms.ninjahippo.io">the CMS</a> or by reading through the <a href="https://github.com/ninjahippo/cms">GitHub repo docs</a>.</p>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="container center">
+            All content &copy; Joah Gerstenberg 2014. Code is licensed under the MIT License.
+          </div>
+        </footer>
     </body>
 </html>
